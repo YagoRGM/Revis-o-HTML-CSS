@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página HTML</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="html">
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="html.html">Página HTML</a>
+        <a href="css.html">Página CSS</a>
+    </nav>
+    <div class="tudo">
+
+        <h2>O que é HTML ?</h2>
+        <p id="oqueehtml">HTML é a linguagem de marcação padrão para criar páginas da Web,  HTML significa HiperText Markup Language, traduzindo ao 
+            português: Linguagem de Marcação de Hipertexto.  O HTML é o componente básico da web, ele permite inserir o conteúdo e 
+            estabelecer a estrutura básica de um website. Ele serve para dar significado e organizar as informações de uma 
+            página na web, sem isso, o navegador não saberia exibir textos como elementos ou carregar imagens e outros conteúdos.</p>
+        <h2>Como funciona o HTML</h2>
+        <h3 id="oqueehtml">Através de um documento HTML, ou seja, um documento com a extensão .html, o navegador faz a leitura do arquivo e renderiza o 
+            seu conteúdo para que o usuário final possa visualizá-lo. Os arquivos .html podem ser visualizados em qualquer navegador. Geralmente um site 
+            é composto por diversas páginas HTML. Cada página consiste em uma série de tags que podem ser considerados os blocos de construção das páginas.</h3>
+        <h2>O que são tags</h2>
+        <h4 id="oqueehtml"> As tags são códigos que definem toda a estrutura da página, tais como o seu tamanho, a fonte da letra, as cores, as quebras de linha e etc. A maioria 
+            dos elementos do documento HTML são compostos por uma estrutura de abertura e uma de fachamento.</h4>
+        <h2>Principais tags do HTML</h2>
+        <ul>
+            <li>&lt;body&gt; – local para declarar todos os elementos que irão compor o corpo da página;</li>
+            <li>&lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt; e &lt;h6&gt; – Tags para definir um título e subtítulos, variando de 1 a 6, sendo h1 o título mais importante e h6 o de menor importância;</li>
+            <li>&lt;p&gt; – Tag para definir um parágrafo;</li>
+            <li>&lt;nav&gt;– define uma área de navegação (como menus);</li>
+            <li>&lt;title&gt; – define o título;</li>
+            <li>&lt;img&gt; – permite inserir uma imagem no seu documento.</li>
+        </ul>
+        <h2>Parágrafo em HTML</h2>
+        <p>Os parágrafos são definidos com a tag< p >.</p>
+        <p>< p >Este é um parágrafo< /p </p>
+        <p>< p >Este é outro parágrafo< /p ></p>
+        <h2>Listas</h2>
+        <h4>Em HTML é possível criar listas ordenadas (ul), ou listas não ordenadas (ol).</h4>
+        <h2>Lista ordenada</h2>
+        <ul>
+            <li>Nome</li>
+            <li>Telefone</li>
+            <li>Endereço</li>
+            <li>País</li>
+        </ul>
+        <h2>Lista não ordenada</h2>
+        <p>Uma lista não ordenada começa com a tag < ul >. Cada item da lista começa com a tag < li >.</p>
+        <p>< ul ></p>
+        <p>   < li >Café< /li ></p>
+        <p>   < li >Leite< /li ></p>
+        <p>  < /ul ></p>
+    
+        <ul>
+            <li>Café</li>
+            <li>Leite</li>
+        </ul>
+    
+        <h2>Lista ordenada</h2>
+        <p>Uma lista ordenada começa com a tag < ol >. Cada item da lista começa com a tag < li >.</p>
+        <p>< ol ></p>
+        <p>   < li >Café< /li ></p>
+        <p>   < li >Leite< /li ></p>
+        <p>  < /ol ></p>
+    
+        <ol>
+            <li>Café</li>
+            <li>Leite</li>
+        </ol>
+        
+        <h2>Títulos e subtítulos</h2>
+        <p>Os elementos HTML < h1 >–< h6 > representam seis níveis de título de seção. < h1 > é o nível de seção mais alto e < h6 > é o 
+            mais baixo.</p>
+        <h2>Exemplo</h2>
+        <p>< h1>Título de nível < h1 ></p>
+        <p>< h2>Título de nível < h2 > </h2></p>
+        <p>< h3>Título de nível < h3 > </h3></p>
+        <p>< h4>Título de nível < h4 > </h4></p>
+        <p>< h5>Título de nível < h5 > </h5></p>
+        <p>< h6>Título de nível < h6 > </h6></p>
+    
+        <h2>Resultado</h2>
+        <h1>Título de nível < h1 > </h1>
+        <h2>Título de nível < h2 > </h2>
+        <h3>Título de nível < h3 > </h3>
+        <h4>Título de nível < h4 > </h4>
+        <h5>Título de nível < h5 > </h5>
+        <h6>Título de nível < h6 > </h6>
+        <h2>Tabelas em HTML</h2>
+        <p>As tags que vão formar a estrutura básica de uma tabela em HTML são as tags < tr > e < td >. A tag < tr > representa uma linha e a tag < td > 
+            representa uma célula. Desta forma, a criação de colunas em uma tabela HTML é feita automaticamente através da quantidade de células incluídas 
+            dentro de uma linha.</p>
+        <img src="./img/exemplotabela.png" alt="">
+        <h2>Exemplo</h2>
+        <p>< table ></p>
+            <p>< thead ></p>
+           <p>< tr ></p>
+               <p>< th >Clube< /th ></p>
+               <p>< th >Pontuação< /th ></p>
+              <p>< /tr ></p>
+           <p>< /thead ></p>
+           <p>< tbody ></p>
+             <p>< tr ></p>
+             <p>< th >São Paulo< /th ></p>
+              <p>< td >32< /td ></p>
+             <p>< /tr ></p>
+             <p>< tr ></p>
+              <p>< th >Bahia< /th ></p>
+              <p>< td >31< /td ></p>
+             <p>< /tr ></p>
+        <p>< /table ></p>
+    
+        <h2>Resultado</h2>
+        <table>
+            <thead>
+              <tr>
+                <th>Clube</th>
+                <th>Pontuação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>São Paulo</th>
+                <td>32</td>
+              </tr>
+              <tr>
+                <th>Bahia</th>
+                <td>31</td>
+              </tr>
+        </table>
+        <p>A tag utilizada para criar uma tabela HTML é a tag < table >, posteriormente fechada com < /table >.</p>
+        <h2>Imagem no HTML</h2>
+        <p>Para colocar uma única imagem em uma página da web, usamos o elemento < img >. Ela requer o atributo 
+            para ser útil — src (source). O atributo src contém um caminho apontando para a imagem que você deseja incorporar na página,
+             que pode ser uma URL relativa ou absoluta,</p>
+        <p>Por exemplo, se sua imagem for chamada dinossauro.jpg, e está no mesmo diretório de sua página HTML, você poderia inserir a imagem assim:</p>
+        <p> < img src="dinossauro.jpg" / ></p>
+        <img src="./img/dinossauro.jpg" alt="">
+        <h2>TAG < a > </h2>
+        <p>O elemento < a > em HTML (ou elemento âncora), com o atributo href cria-se um hiperligação nas páginas web. O conteúdo dentro de cada < a > precisará indicar o destino do link.</p>
+        <p> < a href = "link"> Link Name < /a > </p>
+        <a href = "link"> Link Name </a> 
+    </div>
+</body>
+</html>

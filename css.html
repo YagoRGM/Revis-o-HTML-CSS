@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página CSS</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="html.html">Página HTML</a>
+        <a href="css.html">Página CSS</a>
+    </nav>
+    <div class="tudo">
+        <h1>O que é CSS ?</h1>
+        <p>CSS é chamado de linguagem Cascading Style Sheet e é usado para estilizar elementos escritos em uma linguagem de marcação como 
+            HTML. O CSS separa o conteúdo da representação visual do site. Pense  na decoração da sua página. Utilizando o CSS é possível 
+            alterar a cor do texto e do fundo, fonte e espaçamento entre parágrafos. Também pode criar tabelas, usar variações de layouts, 
+            ajustar imagens para suas respectivas telas e assim por diante.</p>
+        <h2>Como Funciona</h2>
+        <p>O CSS é uma ferramenta muito potente que possibilita criar diversas funcionalidades ao invés de usar JavaScript ou outra linguagem 
+            mais pesada. Se usado com moderação, CSS pode viabilizar uma ótima experiência ao desenvolvedor e usuários das páginas web. Com Ele
+             é possível criar animações complexas, criar efeitos com uso de parallax, que faz parecer que a imagem de fundo tem uma profundidade 
+             diferente um dos outros, criar sites interativos e também mais agradáveis visualmente.</p>
+
+        <h2>Seletores CSS</h2>
+        <h4 id="normal">Os Seletores definem quais elementos um conjunto de regras CSS se aplica.</h4>
+        <h2>Seletores Básicos</h2>
+        <h3>Seletor de TAG</h3>
+        <p>Neste seletor usamos a própria tag para estilizar o documento. Dessa forma, na seleção pode-se especificar em qual elemento será aplicada 
+            a regra de estilo definida.</p>
+        <p>Código HTML</p>
+        <p>< body ></p>
+           <p>< p >Meu primeiro paragrafo< /p ></p>
+        <p> < /body ></p>
+        <p>Código CSS</p>
+        <p>p {</p>
+            <p>color: blue;</p>
+          <p>}</p>
+        <p>No exemplo anterior utilizamos a tag < p > para exemplificar o uso do seletor de tag do CSS, porém se houver mais de uma tag < p > no seu documento 
+            atribuir essa prática se torna um pouco limitada, pois a estilização será aplicada em todos os elementos de parágrafo do documento, dificultando 
+            casos onde queremos estilizar apenas um elemento específico.</p>
+        
+        <h2>Seletor de id</h2>
+        <p>Neste próximo seletor básico, utiliza-se o próprio atributo global id, como identificador para estilizar o documento. Este seletor é utilizado, quando 
+            desejamos identificar um elemento específico no nosso documento, para sua representação no CSS atribuímos o “#” (cerquilha).</p>
+        <p>Código HTML</p>
+        <p>< body ></p>
+            <p>< div id="first">TreinaWeb</ div ></p>
+        <p>< /body ></p>
+        <p>Código CSS</p>
+        <p>#first {</p>
+            <p>color: blue;</p>
+        <p>}</p>
+        <h2>Seletor de Classe</h2>
+        <p>Neste último seletor básico, usamos o próprio atributo global class do HTML para estilizar o documento. Estas classes permitem ao CSS selecionar múltiplos 
+            elementos ao mesmo tempo, desde que os mesmos possuam a mesma classe. Consiste na seleção por meio do nome da classe definida como atributo e possui como 
+            símbolo no CSS o “.” (ponto final).</p>
+        <p>Código HTML</p>
+        <p>< body ></p>
+            <p>< div class="first">TreinaWeb< /div ></p>
+        <p>< /body ></p>
+        
+        <p>Código CSS</p>
+        <p>.first {</p>
+            <p>color: blue;</p>
+        <p>}</p>
+        <h2>Propriedades em CSS</h2>
+        <p>São os atributos que descrevem as características visuais que queremos aplicar a um elemento HTML. Por exemplo, propriedades como color, font-size, 
+            background-color, margin, padding, entre outras, são utilizadas para definir cores, tamanhos de fonte, cores de fundo, margens e preenchimentos de 
+            elementos na página.</p>
+        <h2>Valores em CSS</h2>
+        <p>São os valores específicos atribuídos a cada propriedade para determinar como essas propriedades devem se comportar. Por exemplo, para a propriedade color, 
+            os valores podem ser nomes de cores como red, códigos hexadecimais como #FF0000, ou valores RGBA como rgba(255, 0, 0, 0.5). Para a propriedade font-size, 
+            os valores podem ser unidades como px (pixels), em (relativos ao tamanho da fonte do elemento pai), rem (relativos ao tamanho da fonte do elemento raiz), 
+            entre outros.</p>
+        <h3>Exemplo</h3>
+        <p>p {</p>
+            <p>color: blue;         // Propriedade: color; Valor: blue //</p>
+            <p>font-size: 16px;     // Propriedade: font-size; Valor: 16px //</p>
+            <p>background-color: #f0f0f0; // Propriedade: background-color; Valor: #f0f0f0 //</p>
+            <p>margin: 10px;        // Propriedade: margin; Valor: 10px //</p>
+            <p>padding: 5px;        // Propriedade: padding; Valor: 5px //</p>
+        <p>}</p>
+        <h3>Neste exemplo:</h3>
+    <ul>
+        <li>color, font-size, background-color, margin e padding são propriedades.</li>
+        <li>color, font-size, background-color, margin e padding são propriedades.</li>
+    </ul>
+    <p>Entender como as propriedades e valores funcionam é essencial para controlar o design e o layout de uma página web usando CSS.</p>
+    <h2>O que são classes?</h2>
+    <p>As classes são uma forma de identificar um grupo de elementos. Através delas, pode-se atribuir formatação a VÁRIOS elementos de uma vez. Exemplo:</p>
+    <h4>Código CSS</h4>
+    <p>.classe1 {</p>
+        <p>background: blue;</p>
+    <p>}</p>
+    <h4>Código HTML</h4>
+    <p>< body ></p>
+        <p>< div class="classe1">Div1< /div ></p>
+        <p>< div class="classe1">Div2< /div ></p>
+        <p>< div class="classe1">Div3< /div ></p>
+    <p>< /body ></p>
+    <p>Então, todas as 'divs' que estiverem com a classe "classe1" estarão com um background azul(blue).</p>
+    <h2>O que são ids?</h2>
+    <p>As ids são uma forma de identificar um elemento, e devem ser ÚNICAS para cada elemento. É como se fossem nossos RGs. 
+        Através delas, pode-se atribuir formatação a um elemento em especial. Exemplo:</p>
+    <h4>Código CSS</h4>
+    <p>#idUm {</p>
+        <p>background: blue;</p>
+    <p>}</p>
+    <p>#idDois {</p>
+        <p>background: yellow;</p>
+    <p>}</p>   
+    <p>#idTres {</p>
+        <p>background: green;</p>
+    <p>}</p>
+
+    <h4>Código HTML</h4>
+        <p>< body ></p>
+        <p>< div id="idUm">Div1< /div ></p>
+        <p>< div id="idDois">Div2< /div ></p>
+        <p>< div id="idTres">Div3< /div ></p>
+    <p>< /body ></p>
+    <p>Então, como mostra o código acima, não podemos repetir uma 'id'. Deve ser especialmente única para cada elemento. Pois cada div possui seu próprio background</p>
+
+    <h3>Em CSS, "cascata" e "especificidade" são conceitos fundamentais que determinam como o navegador decide quais estilos aplicar a um elemento específico em uma 
+        página web quando há regras conflitantes.</h3>
+    <h2>Cascata (Cascading)</h2>
+    <p>A cascata refere-se à maneira como as regras de estilo são aplicadas e como conflitos são resolvidos quando múltiplas regras se aplicam ao mesmo elemento.</p>
+    <h2>Especificidade</h2>
+    <p>A especificidade é o mecanismo usado pelo navegador para determinar qual regra CSS aplicar quando há várias regras que se aplicam ao mesmo elemento.</p>
+    <h2>Resumo</h2>
+    <p>Em resumo, a cascata e a especificidade são fundamentais para entender como o CSS aplica estilos a elementos HTML. A cascata determina a ordem de aplicação das regras, 
+        enquanto a especificidade resolve conflitos entre regras baseando-se em critérios numéricos calculados a partir dos seletores utilizados.</p>
+</div>
+</body>
+</html>
